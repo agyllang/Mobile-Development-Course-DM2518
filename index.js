@@ -28,5 +28,11 @@ document.addEventListener("init", function (event) {
     };
   } else if (page.id === "instructions") {
     page.querySelector("ons-toolbar .center").innerHTML = page.data.title;
+  } else if (page.id === "relax") {
+    page.querySelector("ons-toolbar .center").innerHTML = page.data.title;
+  } else if (page.id === "discover") {
+    page.querySelector("ons-toolbar .center").innerHTML = page.data.title;
+  } else if (page.id === "party") {
+    page.querySelector("ons-toolbar .center").innerHTML = page.data.title;
   }
 });
