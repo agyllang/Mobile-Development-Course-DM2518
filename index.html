@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Beer experience</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" />
 
     <link
@@ -33,8 +34,78 @@
   </head>
 
   <body>
-    <h1>
-      Hello World DM2518 course
-    </h1>
+    <ons-navigator swipeable id="myNavigator" page="home.html"></ons-navigator>
+
+    <template id="home.html">
+      <ons-page id="home">
+        <ons-toolbar>
+          <div class="center"></div>
+        </ons-toolbar>
+        <ons-button id="push-button">Instructions</ons-button>
+
+        <p>There are many situations that requires a beer.</p>
+
+        <ons-list-title>Situations</ons-list-title>
+        <ons-list>
+          <ons-list-item id="relax" tappable="true">Relaxation</ons-list-item>
+          <ons-list-item id="discover" tappable="true">Discover</ons-list-item>
+          <ons-list-item id="party" tappable="true">Party</ons-list-item>
+        </ons-list>
+      </ons-page>
+    </template>
+
+    <template id="instructions.html">
+      <ons-page id="instructions">
+        <ons-toolbar>
+          <div class="left">
+            <ons-back-button>Instructions</ons-back-button>
+          </div>
+          <div class="center"></div>
+        </ons-toolbar>
+
+        <p>
+          This is the page about different situations when you might want to
+          have a beer. Different situations requires different beer. Simple as
+          that.
+        </p>
+      </ons-page>
+    </template>
+
+    <template id="relax.html">
+      <ons-page id="relax">
+        <ons-toolbar>
+          <div class="left"><ons-back-button></ons-back-button></div>
+          <div class="center"></div>
+        </ons-toolbar>
+
+        <p>Take it easy...</p>
+      </ons-page>
+    </template>
+
+    <template id="discover.html">
+      <ons-page id="discover">
+        <ons-toolbar>
+          <div class="left"><ons-back-button></ons-back-button></div>
+          <div class="center"></div>
+        </ons-toolbar>
+
+        <p>
+          Have you tried these beers?
+        </p>
+      </ons-page>
+    </template>
+
+    <template id="party.html">
+      <ons-page id="party">
+        <ons-toolbar>
+          <div class="left"><ons-back-button></ons-back-button></div>
+          <div class="center"></div>
+        </ons-toolbar>
+
+        <p>
+          For situations when you want to spice things up..
+        </p>
+      </ons-page>
+    </template>
   </body>
 </html>
