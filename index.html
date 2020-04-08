@@ -41,14 +41,16 @@
         <ons-toolbar>
           <div class="center">Beer</div>
         </ons-toolbar>
-        <ons-button id="push-button">Instructions</ons-button>
-
-        <ons-list-title>Situations</ons-list-title>
-        <ons-list>
-          <ons-list-item id="relax" tappable="true">Relaxation</ons-list-item>
-          <ons-list-item id="discover" tappable="true">Discover</ons-list-item>
-          <ons-list-item id="party" tappable="true">Party</ons-list-item>
-        </ons-list>
+        <ons-tabbar swipeable position="top">
+            <ons-tab page="instructions.html" label="Instructions" icon="md-home" badge="7" active>
+            </ons-tab>
+            <ons-tab page="relax.html" label="Relax" icon="md-snooze" active-icon="md-face">
+            </ons-tab>
+            <ons-tab page="discover.html" label="Discover" icon="md-settings" active-icon="md-face">
+            </ons-tab>
+            <ons-tab page="party.html" label="Party" icon="md-settings" active-icon="md-face">
+            </ons-tab>
+          </ons-tabbar>
       </ons-page>
     </template>
 
@@ -56,7 +58,6 @@
       <ons-page id="instructions">
         <ons-toolbar>
           <div class="left">
-            <ons-back-button></ons-back-button>
           </div>
           <div class="center"></div>
         </ons-toolbar>
@@ -84,7 +85,6 @@
     <template id="relax.html">
       <ons-page id="relax">
         <ons-toolbar>
-          <div class="left"><ons-back-button></ons-back-button></div>
           <div class="center"></div>
         </ons-toolbar>
         <h1>
@@ -103,7 +103,6 @@
     <template id="discover.html">
       <ons-page id="discover">
         <ons-toolbar>
-          <div class="left"><ons-back-button></ons-back-button></div>
           <div class="center"></div>
         </ons-toolbar>
         <h1>
