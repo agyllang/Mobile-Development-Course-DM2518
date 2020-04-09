@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Beer experience</title>
+    <title>exBeerience</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Yesteryear&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="shortcut icon"
       href="https://cdn2.iconfinder.com/data/icons/harry-potter-colour-collection/60/32_-_Harry_Potter_-_Colour_-_Butterbeer-512.png"
@@ -32,7 +37,7 @@
     <template id="home.html">
       <ons-page id="home">
         <ons-toolbar>
-          <div class="center">Beer</div>
+          <div class="head center">exBeerience</div>
         </ons-toolbar>
         <ons-tabbar swipeable position="top">
           <ons-tab
@@ -142,12 +147,22 @@
     <template id="party.html">
       <ons-page id="party">
         <ons-toolbar>
-          <div class="left"><ons-back-button></ons-back-button></div>
           <div class="center"></div>
         </ons-toolbar>
         <h1>
           You want to get drunk, and you want to do it cheaply. We got you, fam.
         </h1>
+        <ons-row style="margin-top: 20px;">
+          <ons-col width="40px" style="text-align: center; line-height: 31px;">
+            <ons-icon icon="md-thumb-down"></ons-icon>
+          </ons-col>
+          <ons-col>
+            <ons-range style="width: 100%;" value="50"></ons-range>
+          </ons-col>
+          <ons-col width="40px" style="text-align: center; line-height: 31px;">
+            <ons-icon icon="md-thumb-up"></ons-icon>
+          </ons-col>
+        </ons-row>
         <ons-card>
           <img
             src="https://static.systembolaget.se/imagelibrary/publishedmedia/32z8s8t2uccxtrlmwtfg/593822.jpg"
